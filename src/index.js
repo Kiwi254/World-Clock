@@ -19,6 +19,16 @@ let sydneyTime = moment().tz("Australia/Sydney");
 sydneyDateElement.innerHTML = sydneyTime.format("MMMM Do, YYYY");
 sydneyTimeElement.innerHTML = sydneyTime.format("h:mm:ss [<small>]A[</small>]");
 }
+
+let newYorkElement = document.querySelector("#new-york");
+if (newYorkElement) {
+let newYorkDateElement = newYorkElement.querySelector(".date");
+let newYorkTimeElement = newYorkElement.querySelector(".time");
+let newYorkTime = moment().tz("America/New_York");
+
+newYorkDateElement.innerHTML = newYorkTime.format("MMMM Do, YYYY");
+newYorkTimeElement.innerHTML = newYorkTime.format("h:mm:ss [<small>]A[</small>]");
+}
 }
 updateTime();
 setInterval(updateTime, 1000)
@@ -39,6 +49,7 @@ function updateCity(event) {
         </div>
         <div class="time">${cityTime.format("h:mm:ss [<small>]A[</small>]")}</div>
     </div>
+    <a href="index.html" class="link">Back to All Cities</a>
     `;  
 }
 

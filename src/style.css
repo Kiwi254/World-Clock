@@ -21,7 +21,7 @@ footer {
 
 select {
    display: block;
-   font-size: 10px;
+   font-size: 15px;
    width: 100%;
    padding: 10px;
    border-radius: 4px;
@@ -62,4 +62,8 @@ select {
     border-radius: 10px;
     box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
     padding: 30px;
+}
+
+.link {
+    text-align: center;
 }
